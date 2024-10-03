@@ -1,9 +1,13 @@
 {
-    "compilerOptions":{
-        "outDir":"js",
+    "compilerOptions": {
+        "outDir": "js",
         "target": "ES2022",
         "removeComments": true,
-        // "noEmit": false
+        "noEmit": false,
+        "module": "NodeNext", // Thêm dòng này
+        "moduleResolution": "nodenext", // Giữ dòng này
+        "lib": ["ES2022", "DOM"],
+        "skipLibCheck": true
     },
     "exclude": [
         "css"
