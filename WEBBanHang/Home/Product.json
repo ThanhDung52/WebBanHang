@@ -1,0 +1,30 @@
+[
+{
+    "name":"Áo Thun",
+    "price":"100",
+    "description":"Áo Thun chất lượng cao",
+    "image":"https://example.com/image1.jpg",
+    "size":"XL"
+},
+{
+    "name":"Áo Len",
+    "price":"110",
+    "description":"Áo len chất lượng cao",
+    "image":"https://example.com/image1.jpg",
+    "size":"L"
+},
+{
+    "name":"Quần short",
+    "price":"250",
+    "description":"Quần short chất lượng cao",
+    "image":"https://example.com/image1.jpg",
+    "size":"XXL"
+},
+{
+    "name":"Áo sơ mi",
+    "price":"200",
+    "description":"Áo sơ mi chất lượng cao",
+    "image":"https://example.com/image1.jpg",
+    "size":"XL"
+}
+]
