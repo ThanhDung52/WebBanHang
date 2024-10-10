@@ -3,13 +3,18 @@
         "outDir": "js",
         "target": "ES2022",
         "removeComments": true,
+        
         "noEmit": false,
         "module": "NodeNext", // Thêm dòng này
         "moduleResolution": "nodenext", // Giữ dòng này
-        "lib": ["ES2022", "DOM"],
-        "skipLibCheck": true
-    },
-    "exclude": [
-        "css"
-    ]
+        // "lib": ["ES2022", "DOM"],
+        "skipLibCheck": true,
+        "isolatedModules": false, 
+        "esModuleInterop": true,
+
+    }
+    // ,
+    // "exclude": [
+    //     "css"
+    // ]
 }
