@@ -1,0 +1,224 @@
+{
+  "product": [
+    {
+      "name": "Áo Thun Cao Cấp",
+      "price": "100",
+      "description": "Áo Thun chất lượng cao",
+      "image": "https://leeandtee.vn/uploads/images/tin-tuc-tong-hop/mau-thoi-trang-hoan-thien-anh-vintage-1.jpg",
+      "size": [
+        "XL",
+        "L",
+        "M",
+        "S"
+      ],
+      "hot": 0,
+      "luotXem": 100,
+      "ngay": "2023-09-27"
+    },
+    {
+      "name": "Áo Len Mềm Mại",
+      "price": "110",
+      "description": "Áo len chất lượng cao",
+      "image": "https://images2.thanhnien.vn/528068263637045248/2023/10/24/valeria-ao-len-2-16981148825261281515998.jpg",
+      "size": [
+        "L",
+        "M"
+      ],
+      "hot": 0,
+      "luotXem": 100,
+      "ngay": "2024-02-16"
+    },
+    {
+      "name": "Quần Short Thời Trang",
+      "price": "250",
+      "description": "Quần short chất lượng cao",
+      "image": "https://c.pxhere.com/photos/e8/13/attractive_beautiful_beauty_blond_hair_eyes_face_fashion_female-1561889.jpg!d",
+      "size": [
+        "XXL",
+        "XL",
+        "L"
+      ],
+      "hot": 0,
+      "luotXem": 100,
+      "ngay": "2024-05-16"
+    },
+    {
+      "name": "Áo Thun Trẻ Trung",
+      "price": "100",
+      "description": "Áo Thun chất lượng cao",
+      "image": "https://images.pexels.com/photos/28345626/pexels-photo-28345626/free-photo-of-nhi-p-nh-v-redor-c-a-th-gi-i.jpeg?auto=compress&cs=tinysrgb&w=600g",
+      "size": [
+        "XL",
+        "L",
+        "M",
+        "S"
+      ],
+      "hot": 0,
+      "luotXem": 300,
+      "ngay": "2023-09-27"
+    },
+    {
+      "name": "Áo Len Thoải Mái",
+      "price": "110",
+      "description": "Áo len chất lượng cao",
+      "image": "https://images.pexels.com/photos/28345695/pexels-photo-28345695/free-photo-of-nhi-p-nh-v-redor-c-a-th-gi-i.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "size": [
+        "L",
+        "M"
+      ],
+      "hot": 1,
+      "luotXem": 1000,
+      "ngay": "2024-02-16"
+    },
+    {
+      "name": "Quần Short Năng Động",
+      "price": "250",
+      "description": "Quần short chất lượng cao",
+      "image": "https://images.pexels.com/photos/28345762/pexels-photo-28345762/free-photo-of-nhi-p-nh-v-redor-c-a-th-gi-i.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "size": [
+        "XXL",
+        "XL",
+        "L"
+      ],
+      "hot": 0,
+      "luotXem": 100,
+      "ngay": "2024-05-16"
+    },
+    {
+      "name": "Áo Thun Thể Thao",
+      "price": "100",
+      "description": "Áo Thun chất lượng cao",
+      "image": "https://cdn.pixabay.com/photo/2021/08/31/11/59/androgynous-6588615_640.jpg",
+      "size": [
+        "XL",
+        "L",
+        "M",
+        "S"
+      ],
+      "hot": 0,
+      "luotXem": 1001,
+      "ngay": "2023-09-27"
+    },
+    {
+      "name": "Áo Len Dày Dặn",
+      "price": "110",
+      "description": "Áo len chất lượng cao",
+      "image": "https://cdn.pixabay.com/photo/2021/08/31/11/58/woman-6588614_640.jpg",
+      "size": [
+        "L",
+        "M"
+      ],
+      "hot": 1,
+      "luotXem": 1002,
+      "ngay": "2024-02-16"
+    },
+    {
+      "name": "Quần Short Mát Mẻ",
+      "price": "250",
+      "description": "Quần short chất lượng cao",
+      "image": "https://cdn.pixabay.com/photo/2018/01/15/08/34/woman-3083453_640.jpg",
+      "size": [
+        "XXL",
+        "XL",
+        "L"
+      ],
+      "hot": 0,
+      "luotXem": 1004,
+      "ngay": "2024-05-16"
+    },
+    {
+      "name": "Áo Thun Đơn Giản",
+      "price": "100",
+      "description": "Áo Thun chất lượng cao",
+      "image": "https://cdn.pixabay.com/photo/2019/08/07/07/05/woman-4390055_640.jpg",
+      "size": [
+        "XL",
+        "L",
+        "M",
+        "S"
+      ],
+      "hot": 0,
+      "luotXem": 1003,
+      "ngay": "2023-09-27"
+    },
+    {
+      "name": "Áo Len Sang Trọng",
+      "price": "110",
+      "description": "Áo len chất lượng cao",
+      "image": "https://images2.thanhnien.vn/528068263637045248/2023/10/24/valeria-ao-len-2-16981148825261281515998.jpg",
+      "size": [
+        "L",
+        "M"
+      ],
+      "hot": 1,
+      "luotXem": 100,
+      "ngay": "2024-02-16"
+    },
+    {
+      "name": "Quần Short Hiện Đại",
+      "price": "250",
+      "description": "Quần short chất lượng cao",
+      "image": "https://cdn.pixabay.com/photo/2021/03/22/16/07/woman-6115105_640.jpg",
+      "size": [
+        "XXL",
+        "XL",
+        "L"
+      ],
+      "hot": 1,
+      "luotXem": 100,
+      "ngay": "2024-05-16"
+    },
+    {
+      "name": "Áo Thun Phong Cách",
+      "price": "100",
+      "description": "Áo Thun chất lượng cao",
+      "image": "https://cdn.pixabay.com/photo/2022/08/23/04/12/vietnamese-woman-7404948_640.jpg",
+      "size": [
+        "XL",
+        "L",
+        "M",
+        "S"
+      ],
+      "hot": 0,
+      "luotXem": 100,
+      "ngay": "2023-09-27"
+    },
+    {
+      "name": "Áo Len Thanh Lịch",
+      "price": "110",
+      "description": "Áo len chất lượng cao",
+      "image": "https://cdn.pixabay.com/photo/2015/04/10/17/09/woman-716592_640.jpg",
+      "size": [
+        "L",
+        "M"
+      ],
+      "hot": 1,
+      "luotXem": 100,
+      "ngay": "2024-02-16"
+    },
+    {
+      "name": "Quần Short Trẻ Trung",
+      "price": "250",
+      "description": "Quần short chất lượng cao",
+      "image": "https://cdn.pixabay.com/photo/2020/12/13/16/37/woman-5828786_640.jpg",
+      "size": [
+        "XXL",
+        "XL",
+        "L"
+      ],
+      "hot": 0,
+      "luotXem": 100,
+      "ngay": "2024-05-16"
+    }
+  ],
+  "loaiSP": [
+    { "id": 1, "name": "Áo thun nam", "thutu": 1, "anhien": 1 },
+    { "id": 2, "name": "Áo sơ mi nữ", "thutu": 2, "anhien": 1 },
+    { "id": 3, "name": "Quần jean nam", "thutu": 3, "anhien": 1 },
+    { "id": 4, "name": "Váy dạ hội", "thutu": 4, "anhien": 0 },
+    { "id": 5, "name": "Áo khoác nữ", "thutu": 5, "anhien": 1 },
+    { "id": 6, "name": "Quần short nam", "thutu": 6, "anhien": 0 },
+    { "id": 7, "name": "Áo dài truyền thống", "thutu": 7, "anhien": 1 }
+]
+
+}
