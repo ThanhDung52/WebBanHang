@@ -1,4 +1,6 @@
+import { promises } from "dns";
 
+const URL_API = 'http://localhost:3000';
 
 interface Product {
     name: string;
@@ -11,174 +13,25 @@ interface Product {
     ngay: string;
 }
 
-// Dữ liệu sản phẩm
-const products: Product[] = [
-    {
-        name: "Áo Thun",
-        price: "100",
-        description: "Áo Thun chất lượng cao",
-        image: "https://leeandtee.vn/uploads/images/tin-tuc-tong-hop/mau-thoi-trang-hoan-thien-anh-vintage-1.jpg",
-        size: ["XL", "L", "M", "S"],
-        hot: 0,
-        luotXem: 100,
-        ngay: "2023-09-27"
-
-    },
-    {
-        name: "Áo Len",
-        price: "110",
-        description: "Áo len chất lượng cao",
-        image: "https://images2.thanhnien.vn/528068263637045248/2023/10/24/valeria-ao-len-2-16981148825261281515998.jpg",
-        size: ["L", "M"],
-        hot: 0,
-        luotXem: 100,
-        ngay: "2024-02-16"
-    },
-    {
-        name: "Quần short",
-        price: "250",
-        description: "Quần short chất lượng cao",
-        image: "https://c.pxhere.com/photos/e8/13/attractive_beautiful_beauty_blond_hair_eyes_face_fashion_female-1561889.jpg!d",
-        size: ["XXL", "XL", "L"],
-        hot: 0,
-        luotXem: 100,
-        ngay: "2024-05-16"
-
-    },
-    {
-        name: "Áo Thun",
-        price: "100",
-        description: "Áo Thun chất lượng cao",
-        image: "https://images.pexels.com/photos/28345626/pexels-photo-28345626/free-photo-of-nhi-p-nh-v-redor-c-a-th-gi-i.jpeg?auto=compress&cs=tinysrgb&w=600g",
-        size: ["XL", "L", "M", "S"],
-        hot: 0,
-        luotXem: 300,
-        ngay: "2023-09-27"
-
-    },
-    {
-        name: "Áo Len",
-        price: "110",
-        description: "Áo len chất lượng cao",
-        image: "https://images.pexels.com/photos/28345695/pexels-photo-28345695/free-photo-of-nhi-p-nh-v-redor-c-a-th-gi-i.jpeg?auto=compress&cs=tinysrgb&w=600",
-        size: ["L", "M"],
-        hot: 1,
-        luotXem: 1000,
-        ngay: "2024-02-16"
-    },
-    {
-        name: "Quần short",
-        price: "250",
-        description: "Quần short chất lượng cao",
-        image: "https://images.pexels.com/photos/28345762/pexels-photo-28345762/free-photo-of-nhi-p-nh-v-redor-c-a-th-gi-i.jpeg?auto=compress&cs=tinysrgb&w=600",
-        size: ["XXL", "XL", "L"],
-        hot: 0,
-        luotXem: 100,
-        ngay: "2024-05-16"
-
-    },
-    {
-        name: "Áo Thun",
-        price: "100",
-        description: "Áo Thun chất lượng cao",
-        image: "https://cdn.pixabay.com/photo/2021/08/31/11/59/androgynous-6588615_640.jpg",
-        size: ["XL", "L", "M", "S"],
-        hot: 0,
-        luotXem: 1001,
-        ngay: "2023-09-27"
-
-    },
-    {
-        name: "Áo Len",
-        price: "110",
-        description: "Áo len chất lượng cao",
-        image: "https://cdn.pixabay.com/photo/2021/08/31/11/58/woman-6588614_640.jpg",
-        size: ["L", "M"],
-        hot: 1,
-        luotXem: 1002,
-        ngay: "2024-02-16"
-    },
-    {
-        name: "Quần short",
-        price: "250",
-        description: "Quần short chất lượng cao",
-        image: "https://cdn.pixabay.com/photo/2018/01/15/08/34/woman-3083453_640.jpg",
-        size: ["XXL", "XL", "L"],
-        hot: 0,
-        luotXem: 1004,
-        ngay: "2024-05-16"
-
-    },
-    {
-        name: "Áo Thun",
-        price: "100",
-        description: "Áo Thun chất lượng cao",
-        image: "https://cdn.pixabay.com/photo/2019/08/07/07/05/woman-4390055_640.jpg",
-        size: ["XL", "L", "M", "S"],
-        hot: 0,
-        luotXem: 1003,
-        ngay: "2023-09-27"
-
-    },
-    {
-        name: "Áo Len",
-        price: "110",
-        description: "Áo len chất lượng cao",
-        image: "https://images2.thanhnien.vn/528068263637045248/2023/10/24/valeria-ao-len-2-16981148825261281515998.jpg",
-        size: ["L", "M"],
-        hot: 1,
-        luotXem: 100,
-        ngay: "2024-02-16"
-    },
-    {
-        name: "Quần short",
-        price: "250",
-        description: "Quần short chất lượng cao",
-        image: "https://cdn.pixabay.com/photo/2021/03/22/16/07/woman-6115105_640.jpg",
-        size: ["XXL", "XL", "L"],
-        hot: 1,
-        luotXem: 100,
-        ngay: "2024-05-16"
-
-    },
-    {
-        name: "Áo Thun",
-        price: "100",
-        description: "Áo Thun chất lượng cao",
-        image: "https://cdn.pixabay.com/photo/2022/08/23/04/12/vietnamese-woman-7404948_640.jpg",
-        size: ["XL", "L", "M", "S"],
-        hot: 0,
-        luotXem: 100,
-        ngay: "2023-09-27"
-
-    },
-    {
-        name: "Áo Len",
-        price: "110",
-        description: "Áo len chất lượng cao",
-        image: "https://cdn.pixabay.com/photo/2015/04/10/17/09/woman-716592_640.jpg",
-        size: ["L", "M"],
-        hot: 1,
-        luotXem: 100,
-        ngay: "2024-02-16"
-    },
-    {
-        name: "Quần short",
-        price: "250",
-        description: "Quần short chất lượng cao",
-        image: "https://cdn.pixabay.com/photo/2020/12/13/16/37/woman-5828786_640.jpg",
-        size: ["XXL", "XL", "L"],
-        hot: 0,
-        luotXem: 100,
-        ngay: "2024-05-16"
-
-    },
-
-
-];
+// Hàm để lấy dữ liệu từ API
+async function fetchProducts(): Promise<Product[]> {
+    try {
+        const response = await fetch(URL_API+"/product");
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        return [];
+    }
+}
 
 // Hàm để render sản phẩm
-function renderProducts(products: Product[]): void {
+async function renderProducts(): Promise<void> {
+    const products = await fetchProducts();
+    
     console.log('Rendering products:', products); // Thêm dòng này để kiểm tra
     
     const productList = document.getElementById('product-list');
@@ -217,7 +70,6 @@ function renderProducts(products: Product[]): void {
                     <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
                         <div class="space-x-2 flex text-sm">`;
 
-        // Tạo HTML cho các size sản phẩm
         product.size.forEach(size => {
             productHTML += `
                 <label>
@@ -255,7 +107,6 @@ function renderProducts(products: Product[]): void {
     });
     productList.innerHTML = productHTML;
 
-
     const popularProducts = products.sort(
         function (a: Product, b: Product) {
             let d1 = a.luotXem;
@@ -289,20 +140,24 @@ function renderProducts(products: Product[]): void {
                         </div>
                     </div>
                     <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
-                        <div class="space-x-2 flex text-sm">`;
+                        <div class="space-x-2 flex text-sm">
+                        `
 
         // Tạo HTML cho các kích thước sản phẩm
         product.size.forEach(size => {
-            popularProductHTML += `
+            popularProductHTML += 
+
+            `
                 <label>
                     <input class="sr-only peer" name="size2" type="radio" value="${size}" checked />
                     <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
                         ${size}
                     </div>
                 </label>`;
-        });
+             });
 
-        popularProductHTML += `
+        popularProductHTML += 
+        `
                         </div>
                     </div>
                     <div class="flex space-x-4 mb-6 text-sm font-medium">
@@ -325,7 +180,8 @@ function renderProducts(products: Product[]): void {
                     </p>
                 </form>
             </div>
-        `;
+            `
+        ;
     });
 
     popularProductList.innerHTML = popularProductHTML;
@@ -346,11 +202,13 @@ function renderProducts(products: Product[]): void {
                 </div>
                 
             </div>
-        </div>
-    `;
+        </div>`
+    ;
     
     })
     popularHotList.innerHTML = popularHotProductHTML;
+
+
 
     const newDate_product= products.sort(
         function (a:Product , b:Product) {
@@ -419,8 +277,8 @@ newDateProductHTML += `
             Miễn phí vận chuyển trên tất cả các đơn đặt hàng trong Tp.HCM
             </p>
         </form>
-    </div>
-`;
+    </div>`
+;
 })
 
   newDateProduct.innerHTML = newDateProductHTML;  
@@ -429,29 +287,39 @@ newDateProductHTML += `
 
 
 
+// Gọi hàm để render sản phẩm sau khi tải trang
+document.addEventListener('DOMContentLoaded', renderProducts);
+
+
 interface LoaiSP {
     id: number;
     name: string;
     thutu: number;
     anhien: number;
 }
+async function fetchLoaiSP(): Promise<LoaiSP[]> {
+    try {
+        const response = await fetch(URL_API + "/loaiSP");
+        if (!response.ok) {
+            throw new Error(response.statusText);
+        }
+        const data = await response.json(); // Phải đặt ở đây, ngoài if
+        return data;
+    } catch (error) {
+        console.error("Error fetching data: ", error);
+        return [];
+    }
+}
 
-const loai_SP: LoaiSP[] = [
-    { id: 1, name: "Áo thun nam", thutu: 1, anhien: 1 },
-    { id: 2, name: "Áo sơ mi nữ", thutu: 2, anhien: 1 },
-    { id: 3, name: "Quần jean nam", thutu: 3, anhien: 1 },
-    { id: 4, name: "Váy dạ hội", thutu: 4, anhien: 0 },
-    { id: 5, name: "Áo khoác nữ", thutu: 5, anhien: 1 },
-    { id: 6, name: "Quần short nam", thutu: 6, anhien: 0 },
-    { id: 7, name: "Áo dài truyền thống", thutu: 7, anhien: 1 }
-];
-function renderLoaiSP(loai_SP: LoaiSP[]): void {
-    console.log("redering loaiSP", loai_SP);
+async function renderLoaiSP(): Promise<void> {
+    const loaiSP = await fetchLoaiSP()
+
+  
     const loai_SP_List = document.getElementById('loaiSP_list');
     if (!loai_SP_List) return;
 
     let loaiSPHTML = ''; // Tạo chuỗi tạm để chứa HTML
-    loai_SP.forEach(loai => {
+    loaiSP.forEach(loai => {
         loaiSPHTML += `
            
                
@@ -469,8 +337,8 @@ function renderLoaiSP(loai_SP: LoaiSP[]): void {
 
 // Render các sản phẩm khi trang được tải
 window.onload = () => {
-    renderProducts(products);
-    renderLoaiSP(loai_SP);
+    renderProducts();
+    renderLoaiSP();
 };
 
 
