@@ -1,4 +1,3 @@
-import { promises } from "dns";
 
 const URL_API = 'http://localhost:3000';
 
@@ -143,7 +142,7 @@ async function renderProducts(): Promise<void> {
                         <div class="space-x-2 flex text-sm">
                         `
 
-        // Tạo HTML cho các kích thước sản phẩm
+        
         product.size.forEach(size => {
             popularProductHTML += 
 
@@ -244,7 +243,7 @@ newDate_product.slice(0, 2).forEach(product=>{
             <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
                 <div class="space-x-2 flex text-sm">`;
 
-// Tạo HTML cho các size sản phẩm
+
 product.size.forEach(size => {
     newDateProductHTML += `
         <label>
@@ -287,7 +286,6 @@ newDateProductHTML += `
 
 
 
-// Gọi hàm để render sản phẩm sau khi tải trang
 document.addEventListener('DOMContentLoaded', renderProducts);
 
 
@@ -303,7 +301,7 @@ async function fetchLoaiSP(): Promise<LoaiSP[]> {
         if (!response.ok) {
             throw new Error(response.statusText);
         }
-        const data = await response.json(); // Phải đặt ở đây, ngoài if
+        const data = await response.json(); 
         return data;
     } catch (error) {
         console.error("Error fetching data: ", error);
@@ -318,7 +316,7 @@ async function renderLoaiSP(): Promise<void> {
     const loai_SP_List = document.getElementById('loaiSP_list');
     if (!loai_SP_List) return;
 
-    let loaiSPHTML = ''; // Tạo chuỗi tạm để chứa HTML
+    let loaiSPHTML = ''; 
     loaiSP.forEach(loai => {
         loaiSPHTML += `
            
@@ -329,7 +327,7 @@ async function renderLoaiSP(): Promise<void> {
         `;
     });
 
-    loai_SP_List.innerHTML = loaiSPHTML; // Gán HTML sau khi đã tạo
+    loai_SP_List.innerHTML = loaiSPHTML; 
 }
 
 

@@ -5,8 +5,8 @@
         "removeComments": true,
         
         "noEmit": false,
-        "module": "NodeNext", // Thêm dòng này
-        "moduleResolution": "nodenext", // Giữ dòng này
+        "module": "NodeNext",
+        "moduleResolution": "nodenext", 
         // "lib": ["ES2022", "DOM"],
         "skipLibCheck": true,
         "isolatedModules": false, 
